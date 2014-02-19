@@ -1,4 +1,6 @@
 Restaurante::Application.routes.draw do
+  resources :pedidos
+
   resources :produtos
 
   resources :clientes

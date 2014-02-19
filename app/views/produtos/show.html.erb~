@@ -2,12 +2,12 @@
 
 <p>
   <strong>Descrição:</strong>
-  <%= @produto.descricao %>
+  <%= @produto.descricao, %>
 </p>
 
 <p>
   <strong>Preço:</strong>
-  <%= @produto.preco %>
+  <%= @produto.preco, %>
 </p>
 
 <p>

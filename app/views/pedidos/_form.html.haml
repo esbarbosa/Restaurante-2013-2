@@ -1,0 +1,8 @@
+= semantic_form_for [@pedido] do |form|
+  
+  = form.input :dataPedido, :label => 'Data'
+  = form.input :situacaoPedido, :label => 'Situação' 
+
+  = form.input :cliente, :member_label => :nomeCliente, :label => 'Cliente' 
+  = form.submit 'Salvar'
+
