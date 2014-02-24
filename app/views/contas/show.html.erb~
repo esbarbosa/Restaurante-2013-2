@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Data de abertura:</strong>
+  <%= @conta.dataAbertura %>
+</p>
+
+<p>
+  <strong>Valor total:</strong>
+  <%= @conta.valorTotal %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @conta.status %>
+</p>
+
+<p>
+  <strong>Data de fechamento:</strong>
+  <%= @conta.dataFechamento %>
+</p>
+
+<p>
+  <strong>pedido:</strong>
+  <%= @conta.pedido %>
+</p>
+
+<%= link_to 'Edit', edit_conta_path(@conta) %> |
+<%= link_to 'Back', contas_path %>

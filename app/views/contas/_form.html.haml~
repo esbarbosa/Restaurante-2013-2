@@ -1,0 +1,10 @@
+= semantic_form_for [@conta] do |form|
+  
+  = form.input :dataAbertura, :label => 'Data de abertura'
+  = form.input :valorTotal, :label => 'Valor total' 
+  = form.input :Status, :label => 'Status' 
+  = form.input :dataFechamento, :label => 'Data de fechamento'
+
+  = form.input :pedido, :member_label => :situacaoPedido, :label => 'pedido' 
+  = form.submit 'Salvar'
+

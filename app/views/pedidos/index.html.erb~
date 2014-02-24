@@ -15,8 +15,8 @@
   <tbody>
     <% @pedidos.each do |pedido| %>
       <tr>
-        <td><%= pedido.dataPedido, %></td>
-        <td><%= pedido.situacaoPedido, %></td>
+        <td><%= pedido.dataPedido %></td>
+        <td><%= pedido.situacaoPedido %></td>
         <td><%= pedido.cliente %></td>
         <td><%= link_to 'Show', pedido %></td>
         <td><%= link_to 'Edit', edit_pedido_path(pedido) %></td>
