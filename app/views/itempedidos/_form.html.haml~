@@ -1,0 +1,8 @@
+= semantic_form_for [@itempedido] do |form|
+
+  = form.input :subtotal, :label => 'Destino'
+  
+  = form.input :pedido, :member_label => :situacaoPedido, :label => 'Pedido' 
+  = form.input :produto, :member_label => :descricao, :label => 'Produto'
+
+  = form.submit 'Salvar'

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140224232534) do
+ActiveRecord::Schema.define(version: 20140225000425) do
 
   create_table "clientes", force: true do |t|
     t.string   "nomeCliente"
@@ -44,6 +44,17 @@ ActiveRecord::Schema.define(version: 20140224232534) do
   end
 
   add_index "contas", ["pedido_id"], name: "index_contas_on_pedido_id"
+
+  create_table "itempedidos", force: true do |t|
+    t.string   "subtotal"
+    t.integer  "pedido_id"
+    t.integer  "produto_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "itempedidos", ["pedido_id"], name: "index_itempedidos_on_pedido_id"
+  add_index "itempedidos", ["produto_id"], name: "index_itempedidos_on_produto_id"
 
   create_table "pedidos", force: true do |t|
     t.string   "dataPedido"

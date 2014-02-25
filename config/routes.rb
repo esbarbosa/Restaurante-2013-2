@@ -1,4 +1,6 @@
 Restaurante::Application.routes.draw do
+  resources :itempedidos
+
   resources :contas
 
   resources :conta
