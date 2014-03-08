@@ -24,7 +24,7 @@
         <td><%= conta.pedido %></td>
         <td><%= link_to 'Show', conta %></td>
         <td><%= link_to 'Edit', edit_conta_path(conta) %></td>
-        <td><%= link_to 'Excluir', conta, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Excluir', conta, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>

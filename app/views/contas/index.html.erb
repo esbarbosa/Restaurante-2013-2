@@ -21,7 +21,7 @@
         <td><%= conta.valorTotal %></td>
         <td><%= conta.status %></td>
         <td><%= conta.dataFechamento %></td>
-        <td><%= conta.pedido %></td>
+        <td><%= conta.pedido.situacaoPedido %></td>
         <td><%= link_to 'Show', conta %></td>
         <td><%= link_to 'Edit', edit_conta_path(conta) %></td>
         <td><%= link_to 'Excluir', conta, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
